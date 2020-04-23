@@ -333,7 +333,9 @@ app.get("/registrar", (req, res) => {
         res.end();
     }
 });
-
+app.post("/TransferLandTitle",(req,res)=>{
+   
+});
 app.get("/propDet", (req, res) => {
     res.render('propDet');
 });
@@ -357,6 +359,12 @@ app.get("/addRegisterar",(req,res)=> {
 app.get("/addInsuranceCompany",(req,res)=> {
     res.render('addInsuranceCompany');
 });
+app.get("/home",(req,res)=>{
+    res.render('home');
+})
+app.get("/new",(req,res)=>{
+    res.render('new');
+})
 
 app.listen(2000, () => {
     console.log("2000");
